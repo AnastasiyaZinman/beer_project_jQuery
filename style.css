@@ -5,3 +5,11 @@ form {
 .user-post, .user-review {
   font-weight: bold;
 }
+.blue{
+  color:blue;
+}
+body{
+  
+  background-image: url("forkandknife.jpg");
+  background-size: cover;
+}
