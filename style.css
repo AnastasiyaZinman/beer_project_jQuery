@@ -1,0 +1,15 @@
+form {
+  margin-top: 30px;
+}
+
+.user-post, .user-review {
+  font-weight: bold;
+}
+.blue{
+  color:blue;
+}
+body{
+  
+  background-image: url("forkandknife.jpg");
+  background-size: cover;
+}
