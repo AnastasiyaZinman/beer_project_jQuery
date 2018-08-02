@@ -1,5 +1,5 @@
 var beers = [];
-sorted = "sort_des";
+var sorted = 1;
 function addBeer(name, category, ball) {
     console.log(name);
     beers.push({
@@ -9,16 +9,11 @@ function addBeer(name, category, ball) {
     });
 }
 
-function compareNumericDes(a, b) {
-sorted="sort_des";
-return b.rating - a.rating;
-}
-function compareNumericAsc(a, b) {
-    sorted="sort_asc";
-    return a.rating - b.rating;
-    }
 $('.sort-beer').on('click', function () {
-    (sorted==="sort_des")?beers.sort(compareNumericAsc):beers.sort(compareNumericDes);
+  sorted=-sorted;
+  beers.sort(function (a,b){
+    return sorted*(a.rating-b.rating);
+  })
     console.log(beers);
     renderBeers();
 });
